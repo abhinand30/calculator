@@ -1,5 +1,12 @@
 // import Calculator from './Pages/Calculator'
 
+import { useEffect } from "react";
+import AOS from "aos";
+
+import 'aos/dist/aos.css';
+import Navbar from "./components/frontend/Navbar"
+import Home from "./components/frontend/Home";
+
 // import Search from "./Pages/search"
 // import ScrollTracker from "./Pages/throttle"
 // import CompoundComponents from "./Pages/CompoundComponents"
@@ -13,8 +20,20 @@
 // import ChartTooltipDefault from "./components/chart"
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 1000,
+      easing: 'ease-in-sine',
+      delay: 200,
+      once: false
+    });
+  }, []);
   return (
     <div className="">
+      <Navbar />
+      <Home />
+      <Home />
       {/* <SegmentedBars /> 
         <WithTransition /> 
         <WithoutTransition /> 
