@@ -1,8 +1,8 @@
-
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   /* line-height: 1.5; */
@@ -49,6 +49,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
+
 .container {
   border-width: 2px;
   background-color: #000;
@@ -61,17 +62,19 @@
   margin-top: 200px;
 }
 
-.displayComponent{
+.displayComponent {
   background-color: #f9f9f9;
   overflow: hidden;
   /* display: flex; */
   height: 100px;
 }
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -89,9 +92,11 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-h2{
-  color:#000
+
+h2 {
+  /* color:#000 */
 }
+
 .buttons {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -99,7 +104,7 @@ h2{
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  width:50px;
+  width: 50px;
   margin-top: 10px;
   font-weight: 500;
   font-family: inherit;
@@ -108,9 +113,11 @@ h2{
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -130,9 +137,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
@@ -214,6 +223,7 @@ button:focus-visible {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

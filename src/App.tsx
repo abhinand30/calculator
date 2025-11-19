@@ -25,7 +25,7 @@ function App() {
       offset: 200,
       duration: 1000,
       easing: 'ease-in-sine',
-      delay: 200,
+      delay: 100,
       once: false
     });
   }, []);
