@@ -71,8 +71,8 @@ function Navbar() {
 
                 {/* MENU LIST */}
                 <div className={`
-          ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 fixed md:static top-0 left-0  h-screen md:h-auto  w-64 md:w-auto 
-         bg-white md:bg-transparent text-white md:text-current p-6 md:p-0  transition-all duration-300 mt-18 md:mt-0`}
+          ${isMenuOpen ? "translate-x-0" : "-translate-x-full"} ${scrolled ? 'mt-23 ml-2 rounded-xl' : 'mt-18'} md:translate-x-0 fixed md:static top-0 left-0  h-screen md:h-auto  w-64 md:w-auto 
+         bg-white md:bg-transparent text-white md:text-current p-6 md:p-0  transition-all duration-300  md:mt-0 `}
                 >
                     <ul className="flex flex-col md:flex-row gap-4 md:gap-8 ">
 
