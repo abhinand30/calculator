@@ -6,6 +6,7 @@ import AOS from "aos";
 import 'aos/dist/aos.css';
 import Navbar from "./components/frontend/Navbar"
 import Home from "./components/frontend/Home";
+import CustomMultiForm from "./Pages/CustomMultiForm";
 
 // import Search from "./Pages/search"
 // import ScrollTracker from "./Pages/throttle"
@@ -31,9 +32,10 @@ function App() {
   }, []);
   return (
     <div className="">
-      <Navbar />
-      <Home />
-      <Home />
+      <CustomMultiForm />
+      {/* <Navbar /> */}
+      {/* <Home />
+      <Home /> */}
       {/* <SegmentedBars /> 
         <WithTransition /> 
         <WithoutTransition /> 

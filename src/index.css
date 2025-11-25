@@ -228,3 +228,11 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+
+.form-container {
+  @apply shadow-sm border-1 h-auto p-4 md:p-8 min-h-[400px] rounded-sm min-w-[300px] w-auto
+}
+
+.btn {
+  @apply flex w-auto min-w-32 text-white rounded-sm p-2 gap-2 justify-center
+}

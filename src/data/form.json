@@ -1,0 +1,238 @@
+{
+  "form": {
+    "personalInformation": {
+      "tabName": "Personal Information",
+      "repeatable": false,
+      "fields": [
+        {
+          "label": "First Name",
+          "name": "firstName",
+          "type": "text",
+          "placeholder": "Enter first name",
+          "required": true
+        },
+        {
+          "label": "Last Name",
+          "name": "lastName",
+          "type": "text",
+          "placeholder": "Enter last name",
+          "required": true
+        },
+        {
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+          "placeholder": "example@mail.com",
+          "required": true
+        },
+        {
+          "label": "Phone Number",
+          "name": "phone",
+          "type": "tel",
+          "placeholder": "Enter phone number",
+          "required": true
+        },
+        {
+          "label": "Date of Birth",
+          "name": "dateOfBirth",
+          "type": "date",
+          "required": true
+        },
+        {
+          "label": "Gender",
+          "name": "gender",
+          "type": "select",
+          "required": true,
+          "options": ["Male", "Female", "Other"]
+        },
+        {
+          "label": "Street Address",
+          "name": "street",
+          "type": "text",
+          "placeholder": "Street/Village",
+          "required": true
+        },
+        {
+          "label": "City",
+          "name": "city",
+          "type": "text",
+          "placeholder": "Enter your city",
+          "required": true
+        },
+        {
+          "label": "State",
+          "name": "state",
+          "type": "text",
+          "placeholder": "Enter your state",
+          "required": true
+        },
+        {
+          "label": "Postal Code",
+          "name": "postalCode",
+          "type": "text",
+          "placeholder": "ZIP / PIN code",
+          "required": true
+        },
+        {
+          "label": "Country",
+          "name": "country",
+          "type": "text",
+          "placeholder": "Enter country",
+          "required": true
+        }
+      ]
+    },
+
+    "educationDetails": {
+      "tabName": "Education Details",
+      "repeatable": true,
+      "fields": [
+        {
+          "label": "Education Level",
+          "name": "level",
+          "type": "select",
+          "required": true,
+          "options": ["Bachelor's", "Master's", "Diploma", "High School"]
+        },
+        {
+          "label": "Institution Name",
+          "name": "institution",
+          "type": "text",
+          "placeholder": "Enter institution name",
+          "required": true
+        },
+        {
+          "label": "Field of Study",
+          "name": "fieldOfStudy",
+          "type": "text",
+          "placeholder": "e.g., Computer Science",
+          "required": true
+        },
+        {
+          "label": "Start Year",
+          "name": "startYear",
+          "type": "number",
+          "placeholder": "YYYY",
+          "required": true
+        },
+        {
+          "label": "End Year",
+          "name": "endYear",
+          "type": "number",
+          "placeholder": "YYYY",
+          "required": true
+        },
+        {
+          "label": "Grade / Percentage",
+          "name": "gradeOrPercentage",
+          "type": "text",
+          "placeholder": "e.g., 80%",
+          "required": false
+        }
+      ]
+    },
+
+    "previousJobExperience": {
+      "tabName": "Job Experience",
+      "repeatable": true,
+      "fields": [
+        {
+          "label": "Company Name",
+          "name": "companyName",
+          "type": "text",
+          "placeholder": "Enter company name",
+          "required": true
+        },
+        {
+          "label": "Job Title",
+          "name": "jobTitle",
+          "type": "text",
+          "placeholder": "e.g., Software Developer",
+          "required": true
+        },
+        {
+          "label": "Start Date",
+          "name": "startDate",
+          "type": "date",
+          "required": true
+        },
+        {
+          "label": "End Date",
+          "name": "endDate",
+          "type": "date",
+          "required": false
+        },
+           {
+          "label": "Current Job?",
+          "name": "isCurrentJob",
+          "type": "checkbox",
+          "required": false
+        },
+        {
+          "label": "Job Description",
+          "name": "jobDescription",
+          "type": "textarea",
+          "placeholder": "Describe your job role",
+          "required": false
+        }
+     
+      ]
+    },
+
+    "skills": {
+      "tabName": "Skills",
+      "repeatable": true,
+      "fields": [
+        {
+          "label": "Skill",
+          "name": "skillName",
+          "type": "text",
+          "placeholder": "e.g., React, UI/UX, Java",
+          "required": true
+        }
+      ]
+    },
+
+    "cvResume": {
+      "tabName": "CV / Resume Upload",
+      "repeatable": false,
+      "fields": [
+        {
+          "label": "Upload CV/Resume",
+          "name": "cvResume",
+          "type": "file",
+          "fileTypes": ["pdf", "doc", "docx"],
+          "required": true
+        }
+      ]
+    },
+
+    "additionalInformation": {
+      "tabName": "Additional Information",
+      "repeatable": false,
+      "fields": [
+        {
+          "label": "Cover Letter",
+          "name": "coverLetter",
+          "type": "textarea",
+          "placeholder": "Write your cover letter",
+          "required": false
+        },
+        {
+          "label": "Portfolio URL",
+          "name": "portfolioUrl",
+          "type": "url",
+          "placeholder": "https://portfolio.com",
+          "required": false
+        },
+        {
+          "label": "LinkedIn URL",
+          "name": "linkedinUrl",
+          "type": "url",
+          "placeholder": "https://linkedin.com/in/username",
+          "required": false
+        }
+      ]
+    }
+  }
+}
